@@ -1,0 +1,11 @@
+<button (click)="increment()">Add</button>
+<button (click)="decrement()">Sub</button>
+<h1>{{ counter }}</h1>
+
+<div [class]="addNumberControl()">
+  {{ addLabelControl() }}
+</div>
+
+<h1 *ngIf="counter > 0">
+  {{ 'The control is visible if the number is greather then 0' }}
+</h1>
